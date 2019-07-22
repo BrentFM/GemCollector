@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+</head>
+<body>
+    
+
+    <div class="jumbotron bodybox span12 shadow p-3 mb-5 bg-white rounded">
+            <h1 class="display-4 bodytitle">Gem Collector</h1>
+            <hr class="my-4">
+            <p class="bodytext">
+                    <h1 id="gems"></h1>
+                    <h1 class="boxuser">Your value: <span id="gemvalue"></span></h1>
+                    <h1 class="boxwins">Wins: <span id="wins"></span></h1>
+                    <h1 class="boxlosses">Losses: <span id="losses"></span></h1>
+
+                        <img class="number gem1" src="assets/images/gem1.png" width="100" height="100">
+                        <img class="number gem2" src="assets/images/gem2.png" width="85" height="100">
+                        <img class="number gem3" src="assets/images/gem3.png" width="85" height="100">
+                        <img class="number gem4" src="assets/images/gem4.png" width="85" height="100">
+
+                    <h1 class="boxcomputer">Computer: <span id="computer"></span></h1>
+
+                    <div class="jumbotron howtobox shadow p-3 mb-5 bg-white rounded">
+                            <h6 class="display-6">How to play - </h6>
+                            <p class="bodytext howtotext"> Match the Computers number to win! Each Gem has a random value on every click. </p>
+                                
+
+    <div id="myWinModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">You won! Thats a shocker!</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary modalbtn">Keep playing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">You almost won, but you didnt...</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary modalbtn">Try again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script 
+        src="assets/javascript/game.js">
+        </script>
+    
+</body>
+</html>
